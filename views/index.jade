@@ -1,0 +1,37 @@
+extends layout
+block stylesheet
+    link(rel='stylesheet', href='/stylesheets/index.css')
+
+block content
+    .container
+        .row
+            h1.col-xs-12.col-md-8.col-md-offset-2 Mybupt Deep Learning Lab
+        .row
+            p.col-xs-12.col-md-8.col-md-offset-2  我们致力于将深度学习应用于文本处理和图像识别领域。
+        .row
+            button.btn.btn-primary.col-xs-8.col-xs-offset-2.col-md-2.col-md-offset-4
+                a 查看演示
+            button.btn.btn-warning.col-xs-8.col-xs-offset-2.col-md-2.col-md-offset-0
+                a 创建我的应用
+        .row
+            .col-xs-12.col-md-4
+                .panel.panel-default
+                    h3 智能客服
+                    p
+                        | 本产品是一款基于深度学习的、具备自增长自适应知识库的智能客服，能够准确理解客户问题，并进行精准的业务回答旨在为企业客服滤除大量重复问题和热点问题，以提供智能问答的接口服务的方式接入呼叫中心或者企业客服系统中。
+                    a.btn.btn-default.btn-block(href="/showBot") 了解详情
+            .col-xs-12.col-md-4
+                .panel.panel-default
+                    h3 超市货架商品识别
+                    p
+                        | 本系统利用了深度学习的卷积神经网络（CNN）来训练模型，自动识别出超市货架照片上指定商品的位置以及个数，对指定商品的识别率达到98%。提供对外服务的API，方便构建基于本系统的其他指定目标识别以及计数的应用。
+                    a.btn.btn-default.btn-block(href="/showPic") 了解详情
+            .col-xs-12.col-md-4
+                .panel.panel-default
+                    h3 灵魂画师
+                    p
+                        | 风格迁移是深度学习众多应用中非常有趣的一种，本系统利用了深度学习的卷积神经网络（CNN）来构建模型，模拟美图秀秀等照片美化APP中滤镜功能的实现原理，选择图片与转换风格就可以生成一副风格独特的图画，让AI成为一名真“灵魂画师”。
+                    a.btn.btn-default.btn-block(href="/showModel") 了解详情
+
+block script
+    script(type='text/javascript', src='javascripts/index.js')

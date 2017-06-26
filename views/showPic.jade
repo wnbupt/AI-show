@@ -1,0 +1,44 @@
+extends layout
+block stylesheet
+    link(rel='stylesheet', href='/stylesheets/showPic.css')
+    link(rel='stylesheet', href='/stylesheets/loading.css')
+block content
+    .container
+        .jumbotron
+            h2 超市货架商品识别
+            p
+                | 本系统利用了深度学习的卷积神经网络（CNN）来训练模型，自动识别出超市货架照片上指定商品的位置以及个数，对指定商品的识别率达到98%。提供对外服务的API，方便构建基于本系统的其他指定目标识别以及计数的应用
+            p#input-tips * Input：货架商品图片
+            p#output-tips * Output：该图片中指定商品的数量
+        .input-container.container
+            h2.ask-title 上传图片试试吧
+            .row.example-pic-row
+                img.example-pic(src='images/showPic/01.JPG')
+                img.example-pic(src='images/showPic/02.jpg')
+                img.example-pic(src='images/showPic/09.JPG')
+                img.example-pic(src='images/showPic/12.JPG')
+                img.example-pic(src='images/showPic/17.jpg')
+                img.example-pic(src='images/showPic/28.jpg')
+                img.example-pic(src='images/showPic/31.JPG')
+                img#upload-pic(src='images/upload_img.png')
+                input#btn-file(type="file" style="display:none" name="image_file")
+        .output-container.container
+            h2.ask-title 返回结果
+            .row(style='margin-bottom: 20px')
+                .col-xs-6
+                    img.img-responsive#before-img(src='')
+                .col-xs-6
+                    img.img-responsive#after-img(src='')
+            .panel.panel-success
+                .panel-heading
+                    h3.panel-title 数据统计
+                .panel-body
+                    | return content
+    .back-container(style="display:none")
+        .spinner
+            .double-bounce1
+            .double-bounce2
+block script
+    script(type='text/javascript', src='javascripts/jquery-3.0.0.min.js')
+    script(type='text/javascript', src='javascripts/jquery.form.js')
+    script(type='text/javascript', src='javascripts/showPic.js')

@@ -1,0 +1,147 @@
+extends layout
+block stylesheet
+    link(rel='stylesheet', href='/stylesheets/about.css')
+
+block content
+    .container.show-container
+        .row
+            .col-md-6
+                img.img-responsive.big-pic(src="/images/about/background.png")
+            .col-md-3
+                .row
+                    img.img-responsive.small-pic(src="/images/about/nationlab.jpg")
+                .row
+                    img.img-responsive.small-pic(src="/images/about/infonet.jpg")
+            .col-md-3
+                .row
+                    img.img-responsive.little-pic(src="/images/about/bigdata1.png")
+                .row
+                    img.img-responsive.little-pic(src="/images/about/bigdata2.png" style="width:220px")
+
+        .row
+            h3.sub-title 实验室介绍
+            p 实验室创立于1985年，至今已有超过30年计算机及通信领域科研积累。目前有教授2名，副教授3名，讲师5名，11名博士研究生、58名硕士研究生。同时，实验室还特聘了一批国际知名的高水平专家及知名企业首席专家为客座教授、研究生企业指导教师。实验室依托电子政务云计算应用技术国家工程实验室、教育部信息网络工程研究中心、中关村四方现代服务产业技术创新战略联盟开展人才培养、科研创新，注重产学研用的紧密结合。
+        .row
+            h3.sub-title 研究方向
+            h4.small-title 人工智能和深度学习
+            p 研究面向特定行业的人工智能和深度学习技术，主要面向医疗健康和金融等领域，包括图像处理、目标识别、文本识别和理解等；
+            h4.small-title 大数据技术
+            p 大数据平台（Hadoop，Spark等）、大数据处理（流数据/实时/离线数据分析和处理）、数据可视化、个性化推荐等；
+            h4.small-title 云计算
+            p 开源云平台、虚拟化技术、资源调度机制和算法、云迁移、应用架构云演化、开放平台；
+            h4.small-title  移动互联网
+            p 移动互联网应用开发框架及中间件、iOS/Android应用新技术、移动用户体验、VR／AR新应用；
+
+        .row
+            h3.sub-title 科研成果
+            p 实验室师生三十年来始终走在信息科技的前沿，累计获得国家科技进步一等奖1次、电子部科技进步一等奖1次、国家教委科技进步一、二等奖各一次，以及省部级二等奖2次，三等奖2次。其中，作为国家重大工程现代服务业领域首批专项任务的承担者，团队主要科研成果“现代服务业共性服务平台及典型应用”鉴定为“国际先进水平”，并获得2009年中国服务业科技创新奖特等奖，教育部2010年度高等学校科学研究优秀成果奖科技进步奖二等奖。
+              | 近五年来，实验室累计发表发表EI/SCI检索论文100多篇，申请发明专利30余项，授权发明专利13项，计算机软件著作权登记24项，译著2本，专著1本。
+        .row
+            h3.sub-title 科研团队
+            .row.teacher-wrap-odd
+                .col-md-2
+                    img.teacher-pic.img-responsive(src="/images/about/dasong.png" style="margin-top:40px")
+                .col-md-10
+                    h4.teacher-title 宋俊德 教授
+                    p.teacher-intro 中国通信标准化协会CMIS主席、国务院学位委员会学科评审组成员、国家人事部博士后评审专家、国际信息联合会IFIP TC7中国主席、北京通信信息协会常务副理事长。
+                        | 曾获国家科技进步一等奖、教育部科技进步二等奖、国家教委科技进步一等奖、电子部科技进步一等奖、“中国服务业科技创新奖”特等奖。
+                    p.teacher-intro 研究重点：下一代宽带无线和移动通信系统、互联网理论技术与应用、无线城市和智慧城市等。同时包括对服务科学与工程、云计算、大数据和物联网相关方面理论和技术。
+
+            .row.teacher-wrap-even
+                .col-md-2
+                    img.teacher-pic.img-responsive(src="/images/about/xiaosong.png" style="margin-top:30px")
+                .col-md-10
+                    h4.teacher-title 宋美娜 教授
+                    p.teacher-intro 现任教育部信息网络工程研究中心主任、国家电子政务云计算应用技术工程实验室副主任、中国通信标准化协会移动互联网应用和终端技术工作委员会副主席、工信部通信科技委互联网应用专家咨询组成员、中国计算机学会青年计算机科技论坛学术委员会委员、中国计算机学会网络与数据通信专业委员会委员、中国计算机学会服务计算专业委员会委员、科技部现代服务业共性服务产业联盟秘书长。
+                    p.teacher-intro 研究重点：服务计算、云计算与大数据、机器学习与深度学习、智慧城市、现代服务业等。
+
+            .row.teacher-wrap-odd
+                .col-md-2
+                    img.teacher-pic.img-responsive(src="/images/about/ebo.png" style="margin-top:5px")
+                .col-md-10
+                    h4.teacher-title 鄂海红 副教授
+                    p.teacher-intro 现任科技部现代服务业共性服务产业联盟副秘书长、CCSA移动互联网应用与终端技术委员会WG1副组长。
+                    p.teacher-intro 研究重点：云计算与大数据、机器学习与深度学习、数据可视化、服务计算、移动互联网等。
+
+            .row.teacher-wrap-even
+                .col-md-2
+                    img.teacher-pic.img-responsive(src="/images/about/oubo.png" style="margin-top:30px")
+                .col-md-10
+                    h4.teacher-title 欧中洪 副教授
+                    p.teacher-intro 现任中国通信标准化协会移动互联网应用与终端技术委员会VR／AR子工作组副组长、中国人工智能学会智能服务专业委员会委员、中国人工智能学会智慧医疗专业委员会委员、多个国际会议程序委员会主席、多个国际知名期刊（如IEEE Transactions）审稿人、多个国际知名会议程序委员会委员。
+                    p.teacher-intro 研究重点：云计算与大数据、机器学习与深度学习、数据可视化、服务计算、移动互联网等。
+            .row
+                h3.sub-title 毕业生去向
+                p 实验室的就业前景良好，毕业生遍布国内外。在已经毕业的学生里，就业去向包括：阿里巴巴、百度、腾讯、网易、微软、Google、VMware、甲骨文、埃森哲、搜狐、小米、360、美团、中国移动/中国联通/中国电信、中国人民银行、PICC、中行/工行/农行/建行/邮储/招行、工信部、中关村、电信研究院、新华社、国家专利局、国家信息安全中心、高校等等。
+                table.table.table-hover.table-bordered(style="text-align:center")
+                    tr
+                        td 年度
+                        td 毕业人数
+                        td 互联网企业
+                        td 电信
+                        td 金融
+                        td 外企
+                        td 政府
+                        td 出国读博人数
+                    tr
+                        td 2013
+                        td 44
+                        td 13
+                        td 8
+                        td 7
+                        td 7
+                        td 7
+                        td 0
+                    tr
+                        td 2014
+                        td 19
+                        td 10
+                        td 2
+                        td 4
+                        td 1
+                        td 2
+                        td 0
+                    tr
+                        td 2015
+                        td 19
+                        td 12
+                        td 1
+                        td 3
+                        td 2
+                        td 1
+                        td 0
+                    tr
+                        td 2016
+                        td 17
+                        td 9
+                        td 1
+                        td 4
+                        td 2
+                        td 1
+                        td 0
+                    tr
+                        td 2017
+                        td 18
+                        td 10
+                        td 1
+                        td 2
+                        td 3
+                        td 1
+                        td 0
+
+            .row
+                h3.sub-title 丰富的文体活动
+                .row
+                    .col-md-4
+                        img.img-responsive(src="/images/about/act1.jpeg")
+                    .col-md-4
+                        img.img-responsive(src="/images/about/act2.png")
+                    .col-md-4
+                        img.img-responsive(src="/images/about/act3.png")
+                .row(style="margin-top:20px")
+                    .col-md-4
+                        img.img-responsive(src="/images/about/act4.jpeg")
+                    .col-md-4
+                        img.img-responsive(src="/images/about/act5.jpeg")
+                    .col-md-4
+                        img.img-responsive(src="/images/about/act6.jpeg")

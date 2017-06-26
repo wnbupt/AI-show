@@ -1,0 +1,52 @@
+.jumbotron h2
+{
+    display: inline-block;
+    line-height: 50px;
+    margin-right: 10px;
+}
+.jumbotron span
+{
+    font-size: 30px;
+}
+.jumbotron p
+{
+    font-size: 16px !important;
+    margin-bottom: 10px !important;
+    line-height: 30px;
+}
+#input-tips,#output-tips
+{
+    font-size: 16px !important;
+    color: #0d70b7;
+    line-height: 20px;
+}
+.input-container
+{
+    padding: 0px 60px;
+    width: 1140px !important;
+}
+.ask-title
+{
+    color: #0d70b7;
+    font-weight: 100;
+}
+.ask-form
+{
+    margin: 20px 0;
+}
+.ask-form button
+{
+    margin-left: 20px;
+    width: 100px;
+}
+.question-list
+{
+    cursor: pointer;
+    transition: all ease 0.3s;
+    line-height: 30px;
+}
+.question-list:hover
+{
+    text-decoration: underline;
+    color:#0d70b7;
+}

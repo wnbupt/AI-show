@@ -1,0 +1,110 @@
+extends layout
+block stylesheet
+    link(rel='stylesheet', href='/stylesheets/showModel.css')
+    link(rel='stylesheet', href='/stylesheets/loading.css')
+block content
+    .container
+        .jumbotron
+            h2 灵魂画师
+            p
+                | 风格迁移是深度学习众多应用中非常有趣的一种，本系统利用了深度学习的卷积神经网络（CNN）来构建模型，模拟美图秀秀等照片美化APP中滤镜功能的实现原理，选择图片与转换风格就可以生成一副风格独特的图画，让AI成为一名真“灵魂画师”。
+            p#input-tips * Input：用户图片与选择的转换风格
+            p#output-tips * Output：对应转换风格的图片
+        .example-container.container
+            h3 示例
+            table.table.table-bordered.example-table
+                tr(style="text-align:center")
+                    td 名称
+                    td 风格
+                    td 转换后图片
+                tr
+                    td
+                        p.style-name wave
+                    td
+                        img.img-responsive.style-pic(src="./images/showModel/wave1.jpg")
+                    td
+                        img.img-responsive.after-pic(src="./images/showModel/wave2.jpg")
+                tr
+                    td
+                        p.style-name cubist
+                    td
+                        img.img-responsive.style-pic(src="./images/showModel/cubist1.jpg")
+                    td
+                        img.img-responsive.after-pic(src="./images/showModel/cubist2.jpg")
+                tr
+                    td
+                        p.style-name denoised_starry
+                    td
+                        img.img-responsive.style-pic(src="./images/showModel/star1.jpg")
+                    td
+                        img.img-responsive.after-pic(src="./images/showModel/star2.jpg")
+                tr
+                    td
+                        p.style-name mosaic
+                    td
+                        img.img-responsive.style-pic(src="./images/showModel/mosaic1.jpg")
+                    td
+                        img.img-responsive.after-pic(src="./images/showModel/mosaic2.jpg")
+                tr
+                    td
+                        p.style-name scream
+                    td
+                        img.img-responsive.style-pic(src="./images/showModel/scream1.jpg")
+                    td
+                        img.img-responsive.after-pic(src="./images/showModel/scream2.jpg")
+                tr
+                    td
+                        p.style-name feathers
+                    td
+                        img.img-responsive.style-pic(src="./images/showModel/feather1.jpg")
+                    td
+                        img.img-responsive.after-pic(src="./images/showModel/feather2.jpg")
+                tr
+                    td
+                        p.style-name udnie
+                    td
+                        img.img-responsive.style-pic(src="./images/showModel/udnie1.jpg")
+                    td
+                        img.img-responsive.after-pic(src="./images/showModel/udnie2.jpg")
+
+        .input-container.container
+            h2.ask-title 上传图片试试吧
+            .row.example-pic-row
+                img.example-pic(src='images/showModel/bupt4.jpg')
+                img.example-pic(src='images/showModel/bupt3.jpg')
+                img.example-pic(src='images/showModel/bupt2.jpg')
+                img.example-pic(src='images/showModel/bupt1.jpg')
+                img#upload-pic(src='images/upload_img.png')
+                input#btn-file(type="file" style="display:none" name="image_file")
+            h2.ask-title 选择风格
+            form.form-inline
+                input.choose-style(type="radio" name="style" value="wave")
+                span.style-name-radio wave
+                input.choose-style(type="radio" name="style" value="cubist")
+                span.style-name-radio cubist
+                input.choose-style(type="radio" name="style" value="denoised_starry")
+                span.style-name-radio denoised_starry
+                input.choose-style(type="radio" name="style" value="mosaic")
+                span.style-name-radio mosaic
+                input.choose-style(type="radio" name="style" value="scream")
+                span.style-name-radio scream
+                input.choose-style(type="radio" name="style" value="feathers")
+                span.style-name-radio feathers
+                input.choose-style(type="radio" name="style" value="udnie")
+                span.style-name-radio udnie
+
+        .output-container.container
+            input.btn.btn-success#sub-btn(type="button" value="马上提交")
+            .row(style='margin-bottom: 20px')
+                .col-xs-6
+                    img.img-responsive#before-img(src='')
+                .col-xs-6
+                    img.img-responsive#after-img(src='')
+    .back-container(style="display:none")
+        .spinner
+            .double-bounce1
+            .double-bounce2
+block script
+    script(type='text/javascript', src='javascripts/jquery-3.0.0.min.js')
+    script(type='text/javascript', src='javascripts/jquery.form.js')
+    script(type='text/javascript', src='javascripts/showModel.js')

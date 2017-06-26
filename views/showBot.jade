@@ -1,0 +1,36 @@
+extends layout
+block stylesheet
+    link(rel='stylesheet', href='/stylesheets/showBot.css')
+block content
+    .container
+        .jumbotron
+            h2 智能客服
+            p
+                | 本产品是一款基于深度学习的、具备自增长自适应知识库的智能客服，能够准确理解客户问题，并进行精准的业务回答，旨在为企业客服滤除大量重复问题和热点问题，以提供智能问答的接口服务的方式接入呼叫中心或者企业客服系统中。
+            p#input-tips * Input：用户问题
+            p#output-tips * Output：与用户问题最为相关的五个标准问题
+        .input-container.container
+            h2.ask-title 问我们一个问题吧
+            form.form-inline.ask-form
+                .form-group
+                    input.form-control#input-box(type='text', style='width: 700px')
+                button.btn.btn-primary#sub-btn 提交
+                button.btn.btn-danger#clear-btn 清空
+            .row
+                .col-xs-6
+                    h4.ask-title 你可以试试这些
+                    ul
+                        li.question-list 密码忘记了怎么办
+                        li.question-list 学生APP在哪里下载
+                        li.question-list 如何赚学豆
+                        li.question-list 怎么给老师送鲜花
+                        li.question-list 做过的作业找不到了
+            h2.ask-title 返回结果
+            .panel.panel-success
+                .panel-heading
+                    h3.panel-title JSON
+                .panel-body
+                    | return content
+
+block script
+    script(type='text/javascript', src='javascripts/showBot.js')

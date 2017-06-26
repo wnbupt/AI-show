@@ -1,0 +1,35 @@
+.show-container
+{
+    padding:0 160px;
+    line-height: 1.5em;
+}
+.small-pic
+{
+    height:151px;
+    margin-bottom: 5px;
+    margin-left: -10px;
+}
+.little-pic
+{
+    height:151px;
+    margin-bottom: 5px;
+    margin-left: -5px;
+}
+.teacher-wrap-odd
+{
+    margin: 20px auto;
+    background-color: #F1F1F5;
+}
+.teacher-wrap-even
+{
+    margin: 20px auto;
+}
+.teacher-pic
+{
+    width: 120px;
+}
+.teacher-intro
+{
+    font-weight: 100;
+}
+

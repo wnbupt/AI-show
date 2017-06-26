@@ -1,0 +1,95 @@
+.jumbotron h2
+{
+    display: inline-block;
+    line-height: 50px;
+    margin-right: 10px;
+}
+.jumbotron span
+{
+    font-size: 30px;
+}
+.jumbotron p
+{
+    font-size: 16px !important;
+    margin-bottom: 10px !important;
+    line-height: 30px;
+}
+#input-tips,#output-tips
+{
+    font-size: 16px !important;
+    color: #0d70b7;
+    line-height: 20px;
+}
+.example-container
+{
+    padding: 0px 60px;
+    width: 1140px !important;
+    margin-bottom: 20px;
+}
+.style-name
+{
+    line-height: 346px;
+    text-align: center;
+}
+.style-pic
+{
+    width: 169px;
+    height: auto;
+    margin:80px auto;
+}
+.after-pic
+{
+    width: 480px;
+    height: auto;
+    margin:0px auto;
+}
+.input-container,.output-container
+{
+    padding: 0px 60px;
+    width: 1140px !important;
+    margin-bottom: 20px;
+}
+.example-pic-row
+{
+    width: 100%;
+    position: relative;
+    padding: 0 20px;
+}
+.example-pic
+{
+    width: calc(20% - 0.4rem);
+    position: relative;
+    height: auto;
+    display: inline-block;
+    cursor: pointer;
+    margin-right: 0.4rem;
+}
+#upload-pic
+{
+    position: relative;
+    height: auto;
+    display: inline-block;
+    cursor: pointer;
+    height: 131px;
+    width: 191px;
+}
+.example-pic:hover
+{
+    border:3px solid #91D050
+}
+.ask-title
+{
+    color: #0d70b7;
+    font-weight: 100;
+}
+.style-name-radio
+{
+    margin-left:5px !important;
+    margin-right: 30px;
+}
+#sub-btn
+{
+    padding:5px 10px;
+    font-size: 18px;
+    margin-bottom: 20px;
+}

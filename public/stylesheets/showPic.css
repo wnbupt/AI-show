@@ -1,0 +1,61 @@
+.jumbotron h2
+{
+    display: inline-block;
+    line-height: 50px;
+}
+.jumbotron span
+{
+    font-size: 30px;
+    margin: -2px;
+}
+.jumbotron p
+{
+    font-size: 16px !important;
+    margin-bottom: 10px !important;
+    line-height: 30px;
+}
+#input-tips,#output-tips
+{
+    font-size: 16px !important;
+    color: #0d70b7;
+    line-height: 20px;
+}
+.input-container,.output-container
+{
+    padding: 0px 60px;
+    width: 1140px !important;
+    margin-bottom: 20px;
+}
+.example-pic-row
+{
+    width: 100%;
+    position: relative;
+    padding: 0 20px;
+}
+.example-pic
+{
+    width: calc(12.5% - 0.4rem);
+    position: relative;
+    height: auto;
+    display: inline-block;
+    cursor: pointer;
+    margin-right: 0.4rem;
+}
+#upload-pic
+{
+    position: relative;
+    height: auto;
+    display: inline-block;
+    cursor: pointer;
+    height: 92px;
+    width: 122px;
+}
+.example-pic:hover
+{
+    border:3px solid #91D050
+}
+.ask-title
+{
+    color: #0d70b7;
+    font-weight: 100;
+}
