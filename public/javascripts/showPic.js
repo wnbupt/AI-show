@@ -12,12 +12,13 @@ $(document).ready(function () {
         $("#before-img").attr("src",img_src)
 
         $(".back-container").css("display","block");
-        console.log("http://111.207.243.72:3000/"+img_src)
 
         datatosend = {
             "urlPic": "http://111.207.243.72:3000/"+img_src
         }
+        console.log(datatosend)
 
+        datatosend = JSON.stringify(datatosend)
         $.ajax({
             type: "post",
             url: rootURL + "/goods_counter/goods_pic",
@@ -26,14 +27,10 @@ $(document).ready(function () {
             dataType: "json",
             crossDomain: true,
             success: function (data) {
-                $(".back-container").css("display","none")
                 urlpic = data.urlPic;
                 console.log("absolute url:"+urlpic)
                 $("#after-img").attr("src","http://111.207.243.71:5555/goods_counter/get_uploaded_image/"+urlpic);
-                // var url_route = urlpic.split("/")
-                // pic_route = "/revFile/"+url_route[url_route.length-1]
-                // console.log("relative url:"+pic_route)
-                // $("#after-img").attr("src",pic_route)
+                $(".back-container").css("display","none")
             },
             error: function (XMLHttpRequest, textStatus, errorThrown) {
                 console.log(XMLHttpRequest.status);
@@ -53,7 +50,11 @@ $(document).ready(function () {
         var objUrl = getObjectURL(this.files[0]) ;
         console.log("objUrl = "+objUrl) ;
         if (objUrl) {
+            $("#before-img").attr("src","")
+            $("#after-img").attr("src","")
+
             $("#before-img").attr("src", objUrl) ;
+            $(".back-container").css("display","block");
         }
     });
 
@@ -79,6 +80,7 @@ $(document).ready(function () {
                 urlpic = data.urlPic;
                 console.log("absolute url:"+urlpic)
                 $("#after-img").attr("src","http://111.207.243.71:5555/goods_counter/get_uploaded_image/"+urlpic);
+                $(".back-container").css("display","none")
             },
             error:function(xhr){ //fail to upload
                 var a=JSON.stringify(xhr);

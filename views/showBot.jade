@@ -14,7 +14,7 @@ block content
             form.form-inline.ask-form
                 .form-group
                     input.form-control#input-box(type='text', style='width: 700px')
-                button.btn.btn-primary#sub-btn 提交
+                button.btn.btn-primary(type="button")#sub-btn 提交
                 button.btn.btn-danger#clear-btn 清空
             .row
                 .col-xs-6
@@ -25,10 +25,10 @@ block content
                         li.question-list 如何赚学豆
                         li.question-list 怎么给老师送鲜花
                         li.question-list 做过的作业找不到了
-            h2.ask-title 返回结果
+
             .panel.panel-success
                 .panel-heading
-                    h3.panel-title JSON
+                    h3.panel-title 返回结果
                 .panel-body
                     | return content
 
